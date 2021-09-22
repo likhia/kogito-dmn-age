@@ -5,7 +5,7 @@ This project uses Quarkus, the Supersonic Subatomic Java Framework.
 It was generated with the following command
 
 	mvn io.quarkus:quarkus-maven-plugin:create \
-	  -DprojectGroupId=com.example -DprojectArtifactId=age \
+	  -DprojectGroupId=com.example -DprojectArtifactId=kogito-dmn-age \
 	  -DprojectVersion=1.0.0-SNAPSHOT -Dextensions=kogito-quarkus,quarkus-smallrye-openapi
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
