@@ -56,6 +56,10 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-openapi</artifactId>
     </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-smallrye-health</artifactId>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
@@ -123,6 +127,12 @@
       </build>
       <properties>
         <quarkus.package.type>native</quarkus.package.type>
+      </properties>
+    </profile>
+    <profile>
+      <id>openshift</id>
+      <properties>
+        <quarkus.package.type>uber-jar</quarkus.package.type>
       </properties>
     </profile>
   </profiles>

@@ -1,16 +1,6 @@
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_293A4D09-A712-47D5-86FD-8536B21F8778" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_84F2DC0F-2F4A-42D0-A48F-4AD5DEA1C818" name="AgeClassificationDMN" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_293A4D09-A712-47D5-86FD-8536B21F8778">
   <dmn:extensionElements/>
-  <dmn:itemDefinition id="_C19476D6-6304-41BB-8A00-A0CB10E92221" name="Parameters" isCollection="false">
-    <dmn:itemComponent id="_2D39D66F-FB57-4009-876E-E16808DB6705" name="classification" isCollection="true">
-      <dmn:typeRef>string</dmn:typeRef>
-    </dmn:itemComponent>
-    <dmn:itemComponent id="_3921B44F-8318-42DA-9A7F-93D42F1666EA" name="max" isCollection="true">
-      <dmn:typeRef>number</dmn:typeRef>
-    </dmn:itemComponent>
-    <dmn:itemComponent id="_B9D9F2C0-BDC6-4339-9FDC-E2F08A15DA38" name="min" isCollection="true">
-      <dmn:typeRef>number</dmn:typeRef>
-    </dmn:itemComponent>
-  </dmn:itemDefinition>
+  <dmn:itemDefinition id="_C19476D6-6304-41BB-8A00-A0CB10E92221" name="Parameters" isCollection="false"/>
   <dmn:inputData id="_4D2F1853-557A-46A7-B518-D0F677BDED4D" name="parameters">
     <dmn:extensionElements/>
     <dmn:variable id="_669D7CFE-CB98-4E80-9F1E-1F2F63ED42AE" name="parameters" typeRef="Parameters"/>
@@ -49,7 +39,7 @@
       </dmn:rule>
       <dmn:rule id="_15F30658-1BD2-43C1-AB79-0D4FE0EB1F19">
         <dmn:inputEntry id="_DC7FAEE6-DC4C-45CC-B5D0-AF5F36C68051">
-          <dmn:text>(parameters.min[2]..parameters.max[2])</dmn:text>
+          <dmn:text>[parameters.min[2]..parameters.max[2])</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_6804BE10-7F31-4547-9861-32D1C043A713">
           <dmn:text>parameters.classification[2]</dmn:text>
